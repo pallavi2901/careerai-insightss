@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 🌎 Global Styles */
+:root {
+  font-family: "Inter", system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light;
+  color: #1a1a1a;
+}
+
+/* 🌈 Make the entire screen have a smooth gradient background */
+body {
+  margin: 0;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+
+  /* Elegant gradient background */
+  background: linear-gradient(
+    135deg,
+    #eef2ff 0%,
+    #e0e7ff 25%,
+    #ede9fe 60%,
+    #faf5ff 100%
+  );
+
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* 🌟 Make sure #root and main layout fit perfectly */
+#root {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* 🔘 Fix for buttons and links */
+a {
+  font-weight: 500;
+  color: #4f46e5;
+  text-decoration: none;
+}
+a:hover {
+  color: #3730a3;
+}
+
+button {
+  border-radius: 8px;
+  border: none;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  background-color: #4f46e5;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+button:hover {
+  background-color: #4338ca;
+}
+
+/* Responsive typography */
+h1,
+h2,
+h3 {
+  color: #e6e6ed;
+}
